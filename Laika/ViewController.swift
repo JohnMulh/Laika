@@ -24,10 +24,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func convertButtonPressed(sender: UIButton) {
-        let ageFromTextField = dogsAgeTextField.text.toInt()!
-        let conversionFactor = 7
+//        let ageFromTextField = dogsAgeTextField.text.toInt()!
+        let ageFromTextField = Double((dogsAgeTextField.text as NSString).doubleValue)
+        let conversionFactor = 7.0
         dogsAgeLabel.text = "\(ageFromTextField * conversionFactor)"
         dogsAgeLabel.hidden = false
+        dogsAgeLabel.textColor = UIColor.greenColor()
         dogsAgeTextField.text = ""
         
     }
