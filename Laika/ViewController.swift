@@ -27,7 +27,7 @@ class ViewController: UIViewController {
 //        let ageFromTextField = dogsAgeTextField.text.toInt()!
         let ageFromTextField = Double((dogsAgeTextField.text as NSString).doubleValue)
         let conversionFactor = 7.0
-        dogsAgeLabel.text = "\(ageFromTextField * conversionFactor)"
+        dogsAgeLabel.text = "\(ageFromTextField * conversionFactor) human equivalent"
         dogsAgeLabel.hidden = false
         dogsAgeLabel.textColor = UIColor.greenColor()
         dogsAgeTextField.text = ""
